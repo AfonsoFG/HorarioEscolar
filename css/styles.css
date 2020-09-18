@@ -62,8 +62,21 @@ select {
     margin-bottom: 20px;
     margin-top: 40px
 }
-.changeTheme a:first-of-type {
+
+.changeTheme span:first-of-type {
     margin-right: 20px
+}
+
+span {
+    color: #285161;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 300ms;
+}
+
+span:hover {
+    color: #FF4B55;
+    box-shadow: 0 3px #FF4B55
 }
 
 .rosa {
@@ -73,11 +86,6 @@ select {
 .azul {
     background: #B2E1E5
 }
-
-a {
-    color: #285161
-}
-
 
 table {
     width: 100%;
@@ -111,6 +119,7 @@ table tr td{
     border-left: 1px solid #285161;
     border-right: 1px solid #285161
 }
+
 tr td:first-child {
     width: 50%
 }

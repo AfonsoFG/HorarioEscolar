@@ -57,8 +57,6 @@ let renderEmptyTable = () => {
 }
 
 let changeTheme = (event) => {
-    event.preventDefault();
-
     const newTheme = event.explicitOriginalTarget.dataset.tema;
     const oldTheme = newTheme === 'azul' ? 'rosa' : 'azul';
 
@@ -79,7 +77,6 @@ Array.from(themes).forEach(function(elem) {
 });
 
 (init = () => {
-
     if (localStorage.getItem("theme")) {
         document.body.classList.add(localStorage.getItem("theme"));
     } else {
