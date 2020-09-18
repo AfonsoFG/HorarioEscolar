@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Horário Escolar</title>
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;800&display=swap" rel="stylesheet"> 
+    <link rel="apple-touch-icon" sizes="57x57" href="img/appicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/appicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/appicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/appicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/appicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/appicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/appicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/appicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/appicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/appicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/appicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/appicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/appicon/favicon-16x16.png">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="manifest" href="img/appicon//manifest.json">
+    <meta name="msapplication-TileColor" content="#D26834">
+    <meta name="msapplication-TileImage" content="img/appicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#D26834">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col100">
+				<h1 class="text-center">Horário 1º Ano Turma C</h1>
+			</div>
+            <div class="col100">
+				<div class="selectDay">
+					<label for="selectDay">Escolha um dia</label>
+					<select id="selectDay">
+                        <option value="1">Segunda</option>
+                        <option value="2">Terça</option>
+                        <option value="3">Quarta</option>
+                        <option value="4">Quinta</option>
+                        <option value="5">Sexta</option>
+                        <option value="6">Sábado</option>
+                        <option value="0">Domingo</option>
+                    </select>
+                </div>
+				<div>
+                    <p id="fimDeSemana" style="display:none">Ao fim-de-semana não há escola! :)</p>
+					<table>
+                        <tr>
+                            <td>09:00 - 10:00</td>
+                            <td data-periodo='1'></td>
+                        </tr>
+                        <tr>
+                            <td>10:00 - 10:30</td>
+                            <td data-periodo='2'></td>
+                        </tr>
+                        <tr>
+                            <td>11:00 - 12:00</td>
+                            <td data-periodo='3'></td>
+                        </tr>
+                        <tr>
+                            <td>13:30 - 14:30</td>
+                            <td data-periodo='4'></td>
+                        </tr>
+                        <tr>
+                            <td>14:30 - 15:30</td>
+                            <td data-periodo='5'></td>
+                        </tr>
+                        <tr>
+                            <td>16:00 - 17:00</td>
+                            <td data-periodo='6'></td>
+                        </tr>
+                    </table>
+				</div>
+				<div class="changeTheme">
+					<p>Mudar tema de cores</p>
+					<a href="index.html" class="temas" data-tema="rosa">Tema rosa</a>
+					<a href="index.html" class="temas" data-tema="azul">Tema azul</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/scripts.js"></script>
+</body>
+</html>
