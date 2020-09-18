@@ -29,6 +29,10 @@ h1 {
     font-family: 'Baloo 2', cursive;
 }
 
+h2 {
+    line-height: 420px;
+}
+
 p,
 label {
     margin: 0 0 5px 0;
@@ -48,7 +52,6 @@ select {
     border-radius: 0;
     margin-top: 5px
 }
-
 
 .selectDay{
     margin-top: 40px;
@@ -96,8 +99,12 @@ table tr:not(:last-of-type) {
     border-bottom: 3px dotted #285161
 }
 
-table tr:nth-child(3){
+.rosa table tr:nth-child(3){
     border-bottom: 3px dashed #F2D4D8
+}
+
+.azul table tr:nth-child(3){
+    border-bottom: 3px dashed #B2E1E5
 }
 
 table tr td{
