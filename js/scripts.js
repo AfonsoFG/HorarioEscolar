@@ -3,22 +3,20 @@ async function getHorarioJson(path, callback) {
 }
 
 let changeDay = day => getHorarioJson('data/json/horario.json', (json) => {
-    const currentDate = new Date();
-    const todayNumeric = currentDate.getDay();
     const weekDays = ["Sunday" , "Monday" , "Tuesday" , "Wednesday" , "Thursday" , "Friday" , "Saturday"];
     let horarioDoDia = json.days.filter(
         (item) => {
-            if (todayNumeric % 6 !== 0) {
+            if (day % 6 !== 0) {
                 return item[weekDays[day]];
             }
         }
     );
+
     if (horarioDoDia[0]) {
         renderTable(horarioDoDia[0][weekDays[day]])
     } else {
         renderEmptyTable();
     }
-    
 });
 
 let renderTable = data => {
