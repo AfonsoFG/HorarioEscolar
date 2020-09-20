@@ -83,10 +83,16 @@ Array.from(themes).forEach(function(elem) {
 
     const currentDate = new Date();
     const todayNumeric = currentDate.getDay();
-    const weekDays = ["Sunday" , "Monday" , "Tuesday" , "Wednesday" , "Thursday" , "Friday" , "Saturday"];
+
+    let optionsIndex;
+    if (todayNumeric === 0) {
+        optionsIndex = 6;
+    } else {
+        optionsIndex = todayNumeric - 1;
+    }
 
     var selectDay = document.getElementById('selectDay');
-    selectDay.options[todayNumeric - 1].selected = true;
-    selectDay.options[todayNumeric - 1].prepend('[HOJE] ');
+    selectDay.options[optionsIndex].selected = true;
+    selectDay.options[optionsIndex].prepend('[HOJE] ');
     changeDay(todayNumeric);
 })();
