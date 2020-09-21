@@ -1,15 +1,15 @@
 {
 	"days": [
 		{
-            "Monday": ["pt", "pt", "mt",  "mt", "em"]
+            "Monday": ["pt", "pt", "mt",  "mt", "em", "ea"]
 		}, {
-            "Tuesday": ["mt", "mt", "pt", "oc"]
+            "Tuesday": ["mt", "mt", "pt", "oc", "mu", "en"]
 		}, {
-            "Wednesday": ["mt", "mt", "pt", "pt", "em"]
+            "Wednesday": ["mt", "mt", "pt", "pt", "em", "ef"]
 		}, {
-            "Thursday": ["ae", "ae", "pt"]
+            "Thursday": ["ae", "ae", "pt", "mu", "af", "en"]
 		}, {
-            "Friday": ["pt", "pt", "em", "mt", "mt"]
+            "Friday": ["pt", "pt", "em", "mt", "mt", "ea"]
 		}
 	]
 }

@@ -35,7 +35,11 @@ let renderTable = data => {
     rows.forEach(elem => {
         if (elem.cells[1].dataset.periodo) {
             const val = data[elem.cells[1].dataset.periodo - 1];
-            elem.cells[1].innerHTML = val ? '<img src="img/icones/' + val + '.svg">' : '';
+            let aec = '';
+            if (val === "mu" || val === "en" || val === "af") {
+                aec = 'class="aec"';
+            }
+            elem.cells[1].innerHTML = val ? '<img src="img/icones/' + val + '.svg"' + aec + '>' : '';
         }
     });
 }

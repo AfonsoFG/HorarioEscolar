@@ -131,3 +131,9 @@ img {
     width: 50px;
     vertical-align: middle;
 }
+
+.aec {
+    border: 3px solid purple;
+    border-radius: 50%;
+    width: 53px;
+}
